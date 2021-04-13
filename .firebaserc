@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "code-exercises-72620": {
+      "hosting": {
+        "rxjs": [
+          "code-exercises-72620"
+        ]
+      }
+    }
+  }
+}

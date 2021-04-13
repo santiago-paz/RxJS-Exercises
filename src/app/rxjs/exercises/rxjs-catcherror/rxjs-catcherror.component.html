@@ -1,0 +1,7 @@
+<mat-card *ngFor="let error of errors">
+    <span>{{error.message}}</span>
+    <button color="primary" (click)="showFull = true" mat-raised-button>Show full</button>
+    <span *ngIf="showFull">
+        {{error|json}}
+    </span>
+</mat-card>
