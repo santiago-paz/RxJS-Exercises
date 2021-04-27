@@ -1,0 +1,7 @@
+<h2>Event bus service</h2>
+<p>Press some buttons</p>
+<button color="primary" (click)="onCreateUserButtonClick()" mat-raised-button>Create user</button>
+<button (click)="onDeleteUserButtonClick()" mat-raised-button>Delete user</button>
+<mat-card *ngFor="let event of events">
+    {{event}}
+</mat-card>

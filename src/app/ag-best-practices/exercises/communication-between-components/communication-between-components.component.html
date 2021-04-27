@@ -1,0 +1,37 @@
+<mat-grid-list cols="4" rowHeight="250px" gutterSize="10">
+    <mat-grid-tile>
+        <button color="primary" (click)="onSubjectButtonClick()" mat-raised-button>Subscribe Subject</button>
+    </mat-grid-tile>
+    <mat-grid-tile class="container" style="overflow: scroll;">
+        <div class="container">
+            <app-child-one *ngFor="let user of subjectUsers" [user]="user"></app-child-one>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <button color="primary" (click)="onBehaviorSubjectButtonClick()" mat-raised-button>Subscribe Behavior
+            Subject</button>
+    </mat-grid-tile>
+    <mat-grid-tile style="overflow: scroll;">
+        <div class="container">
+            <app-child-one *ngFor="let user of behaviorSubjectUsers" [user]="user"></app-child-one>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <button color="primary" (click)="onReplaySubjectButtonClick()" mat-raised-button>Subscribe
+            ReplaySubject</button>
+    </mat-grid-tile>
+    <mat-grid-tile style="overflow: scroll;">
+        <div class="container">
+            <app-child-two *ngFor="let user of replaySubjectUsers" [user]="user"></app-child-two>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <button color="primary" (click)="onCallAsyncSubjectButtonClick()" mat-raised-button>Subscribe Async
+            Subject</button>
+    </mat-grid-tile>
+    <mat-grid-tile style="overflow: scroll;">
+        <div class="container">
+            <app-child-one *ngFor="let user of asyncSubjectUsers" [user]="user"></app-child-one>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

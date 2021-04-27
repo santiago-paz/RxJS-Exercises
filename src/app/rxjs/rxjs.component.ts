@@ -16,11 +16,5 @@ export class RxjsComponent implements OnInit {
     this.activatedRoute.firstChild?.url.subscribe(child => {
       this.activeExercise = child[0].path;
     });
-    this.activatedRoute.url.subscribe(res => {
-      console.log(res);
-      res.forEach(dad => {
-        console.log(dad);
-      });
-    })
   }
 }

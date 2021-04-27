@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  jsonPlaceHolderURL: 'https://jsonplaceholder.typicode.com/'
+  jsonPlaceHolderURL: 'https://jsonplaceholder.typicode.com/',
+  myFakeApp: 'https://60861cbbd14a870017578ac1.mockapi.io/myfakeapp/'
 };
 
 /*

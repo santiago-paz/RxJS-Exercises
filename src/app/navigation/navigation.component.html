@@ -2,8 +2,15 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menú</mat-toolbar>
+    <mat-form-field appearance="fill">
+      <mat-label>Tipos</mat-label>
+      <mat-select [value]="typeSelected" (selectionChange)="onExerciseTypeChange($event.value)">
+        <mat-option *ngFor="let exerciseType of exerciseTypes" [value]="exerciseType">{{exerciseType}}</mat-option>
+      </mat-select>
+    </mat-form-field>
     <mat-nav-list>
-      <a mat-list-item *ngFor="let link of links" routerLinkActive="active" [routerLink]="['/ejercicios/rxjs/' + link]">
+      <a mat-list-item *ngFor="let link of links" routerLinkActive="active"
+        [routerLink]="['/ejercicios/' + typeSelected + '/' + link]">
         {{link}}
       </a>
     </mat-nav-list>
