@@ -1,0 +1,7 @@
+<form>
+    <mat-form-field>
+        <input [formControl]="userName" matInput placeholder="Name">
+    </mat-form-field>
+    <button color="primary" [disabled]="!userName.valid" type="submit" mat-raised-button (click)="onAddUserButtonClick($event)">Add user</button>
+</form>
+<app-child-one style="margin-bottom: 1rem; display: block;" *ngFor="let user of users" [user]="user"></app-child-one>

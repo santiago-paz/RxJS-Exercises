@@ -27,8 +27,8 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.exerciseTypes = this.loadExerciseTypesList();
-    this.links = this.getChildRoutes(this.exerciseTypes[1]);
+    /* this.exerciseTypes = this.loadExerciseTypesList();
+    this.links = this.getChildRoutes(this.exerciseTypes[1]); */
   }
 
   loadExerciseTypesList(): Array<string> {

@@ -5,7 +5,7 @@ import { IUser } from '../interfaces/User';
 @Injectable({
   providedIn: 'root'
 })
-export class ObservableServiceService {
+export class ObservableService {
 
   private _users: BehaviorSubject<Array<IUser>> = new BehaviorSubject([{ name: 'Santiago' }]);
   users$: Observable<Array<IUser>> = this._users.asObservable();
@@ -15,10 +15,7 @@ export class ObservableServiceService {
   constructor() { }
 
   addUser(user: IUser): Observable<Array<IUser>> {
-
-    this.users.push({
-      name: 'John' + Math.floor(Math.random() * 50).toString()
-    })
+    this.users.push(user);
     this._users.next(this.users);
     return of(this.users);
   }
