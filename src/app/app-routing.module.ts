@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'ag-best-practices',
+    path: 'best-practices',
     loadChildren: () =>
       import('./ag-best-practices/ag-best-practices.module').then(
         module => module.AgBestPracticesModule

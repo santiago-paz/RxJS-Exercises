@@ -1,0 +1,60 @@
+[
+  {
+    "path": "best-practices",
+    "children": [
+      {
+        "path": "presentation-container-pattern"
+      },
+      {
+        "path": "communication-between-components"
+      },
+      {
+        "path": "event-bus"
+      },
+      {
+        "path": "observable-service"
+      }
+    ]
+  },
+  {
+    "path": "rxjs",
+    "children": [
+      {
+        "path": "basics"
+      },
+      {
+        "path": "map-pipe-filter"
+      },
+      {
+        "path": "tap"
+      },
+      {
+        "path": "catcherror"
+      },
+      {
+        "path": "flatmap"
+      },
+      {
+        "path": "observer-and-observable"
+      },
+      {
+        "path": "interval-race"
+      },
+      {
+        "path": "tap-delay-scan"
+      },
+      {
+        "path": "fibonacci"
+      },
+      {
+        "path": "skipuntil-sharereplay"
+      },
+      {
+        "path": "behaviorsubject"
+      },
+      {
+        "path": "ejercicio-tecnico"
+      }
+    ]
+  }
+]

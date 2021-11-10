@@ -9,10 +9,8 @@ export class EjercicioTecnicoComponent implements OnInit {
   selectedCircle: number = 0;
   previousSelectedCircle: number = 0;
   circles = 4;
-  
-  constructor() { }
 
-  
+  constructor() { }
 
   ngOnInit(): void {
   }
